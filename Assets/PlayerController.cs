@@ -4,25 +4,21 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public float CarSpeed=5f;
-    Vector3 MoveInput = Vector3.zero;
-    CharacterController characterController;
+    public Rigidbody rb;
+    public float speed;
 
-    private void Awake()
+    void Update()
     {
-        characterController = GetComponent<CharacterController>();
-    }
-    private void Update()
-    {
-        Move();
-    }
+        rb.AddForce(0, 0, speed * Time.deltaTime);
 
-    private void Move()
-    {
-        MoveInput = new Vector3(Input.GetAxis("Horizontal"), 0f, Input.GetAxis("Vertical"));
-        MoveInput = transform.TransformDirection(MoveInput) * CarSpeed;
-
-        characterController.Move(MoveInput * Time.deltaTime);
+        if (Input.GetKey(KeyCode.D))
+        {
+            rb.AddForce(speed * Time.deltaTime, 0,0);
+        }
+        if (Input.GetKey(KeyCode.A))
+        {
+            rb.AddForce(-speed * Time.deltaTime, 0, 0);
+        }
     }
 
 }
