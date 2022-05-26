@@ -5,7 +5,8 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public Rigidbody rb;
-    public float speed;
+    public float Carspeed;
+
 
     void Update()
     {
