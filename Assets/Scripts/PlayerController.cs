@@ -5,21 +5,24 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public Rigidbody rb;
-    public float Carspeed;
+    public float speed = 100f;
 
 
     void Update()
     {
-        rb.AddForce(0, 0, speed * Time.deltaTime);
-
+      
         if (Input.GetKey(KeyCode.D))
         {
-            rb.AddForce(speed * Time.deltaTime, 0,0);
+            rb.AddForce(-speed * Time.deltaTime, 0,0);
         }
         if (Input.GetKey(KeyCode.A))
         {
-            rb.AddForce(-speed * Time.deltaTime, 0, 0);
+            rb.AddForce(speed * Time.deltaTime, 0, 0);
         }
+       
     }
+
+    
+
 
 }
