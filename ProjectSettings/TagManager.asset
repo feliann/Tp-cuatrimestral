@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - Floor
+  - Obstaculo
+  - WayPoint
+  - WayPoint1
+  - WayPoint2
   layers:
   - Default
   - TransparentFX

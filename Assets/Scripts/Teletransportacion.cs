@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class Teletransportacion : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+
+  
+    private void OnCollisionEnter(Collision collision)
     {
-        
+                         
+           if (collision.gameObject.CompareTag("WayPoint1"))
+        {
+           
+            transform.position = new Vector3 (-21,0, -146);
+
+
+        }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
