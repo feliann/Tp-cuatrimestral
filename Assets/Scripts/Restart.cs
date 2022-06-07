@@ -6,10 +6,12 @@ using UnityEngine.SceneManagement;
 
 public class Restart : MonoBehaviour
 {
-    public void update()
+    public void Restar()
     {
-        Time.timeScale = 0f;
-        SceneManager.LoadScene("SampleScene");
+       SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 0);     
+       SceneManager.LoadScene("SampleScene");
+       Time.timeScale = 1f;
+
     }
 }
 
