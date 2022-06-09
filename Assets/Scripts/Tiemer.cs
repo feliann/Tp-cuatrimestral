@@ -15,7 +15,7 @@ public class Tiemer : MonoBehaviour
         currentTime = Time.timeSinceLevelLoad;
 
         txt_timeFloored.text = Mathf.Floor(currentTime).ToString();
-        if (currentTime > 10)
+        if (currentTime > 20)
         {
             SceneManager.LoadScene("Win"); ;
         }
