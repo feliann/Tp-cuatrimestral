@@ -205,7 +205,7 @@ GameObject:
   - component: {fileID: 56512512}
   - component: {fileID: 56512511}
   m_Layer: 5
-  m_Name: Restart (1)
+  m_Name: Crear
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -283,8 +283,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2124342633}
-        m_MethodName: Restar
+      - m_Target: {fileID: 1668821726}
+        m_MethodName: CloneObject
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1026,6 +1026,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1668821725}
   - component: {fileID: 1668821724}
+  - component: {fileID: 1668821726}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -1059,6 +1060,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1668821726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1668821723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d519196168e95dd4a90140cb3dc235c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToClone: {fileID: 126218, guid: da59e5a3713884d4f9e9667c2befa1a4, type: 3}
+  cloneamount: 3
 --- !u!1 &2124342632
 GameObject:
   m_ObjectHideFlags: 0
