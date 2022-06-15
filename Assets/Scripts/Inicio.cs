@@ -10,10 +10,10 @@ public class Inicio : MonoBehaviour
 
         if (collision.gameObject.CompareTag("WayPoint1"))
         {
-            random = Random.Range(-3, -24);
+        //    random = Random.Range(-3, -24);
             //Debug.Log(random);
             //Debug.Log("hola");
-            transform.position = new Vector3(-8, 0, -141);
+            transform.position = new Vector3(-3.5f, -20.25948f, -130.687f);
 
 
         }
